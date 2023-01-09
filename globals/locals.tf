@@ -2,7 +2,7 @@ locals {
 
   domain_tld = split(".", var.domain)[1]
 
-  resource_name_prefix = join(
+  resource_prefix = join(
     "-",
     [
       var.organization,
